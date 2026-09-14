@@ -33,7 +33,7 @@ function About() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={staggerContainer}
-      className="relative w-full min-h-[25vh] sm:min-h-[35vh] bg-[#E2E3F6] text-gray-900 py-4 sm:py-6 md:py-8 lg:py-10"
+      className="relative w-full min-h-[25vh] sm:min-h-[35vh] bg-[#E2E3F6] text-gray-900 py-8 sm:py-10 md:py-12 lg:py-16"
     >
       <div className="mx-auto w-[90%] max-w-[1200px]">
         <motion.div
@@ -43,18 +43,18 @@ function About() {
           {/* Left Column - About Me */}
           <motion.div
             variants={fadeInLeft}
-            className="w-full lg:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center"
+            className="w-full lg:w-1/2 p-8 sm:p-10 md:p-14 lg:p-16 xl:p-20 flex flex-col justify-center space-y-4 sm:space-y-6"
           >
-            <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase mb-2 sm:mb-3">
+            <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase">
               Introducing
             </p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] sm:leading-[1.15] tracking-tight text-white">
               About Me
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-xl mb-4 sm:mb-6">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl">
               A strategic connector in trade, investment promotion and cultural diplomacy sector, driving force behind impactful partnerships across Africa and beyond. Media & Communication Specialist, Tech and Business Development professional based in Rwanda.
             </p>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl">
               As CEO of Hooza Media and Hooza & Partners, I deliver market intelligence, open strategic doors, and guide ventures from concept to success in over 20 African countries and the Caribbean. As a Board Director at the European Business Chamber of Rwanda, I promote investment in key sectors such as green mobility, biotech, energy, and creative industries. Recognised by Forbes Africa and the ITU, advocating for youth and women empowerment through entrepreneurship and innovation, I've mentored 2,500+ entrepreneurs, helping transform ideas into market-ready ventures. My mission: link people, ideas, and opportunities to shape Africa's inclusive, sustainable growth.
             </p>
           </motion.div>
@@ -80,19 +80,19 @@ function About() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={staggerContainer}
-      className="relative w-full bg-white text-gray-900 py-10 sm:py-12 md:py-16 lg:py-20"
+      className="relative w-full bg-white text-gray-900 py-12 sm:py-16 md:py-20 lg:py-24"
     >
       <div className="mx-auto w-[90%] max-w-[1200px]">
-        <motion.div variants={fadeInUp} className="mb-8 sm:mb-10 md:mb-12 text-center">
-          <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase mb-2 sm:mb-3">
+        <motion.div variants={fadeInUp} className="mb-10 sm:mb-12 md:mb-16 text-center">
+          <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase mb-3 sm:mb-4">
             MY APPROACH
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.2] tracking-tight">
             How I Work
           </h2>
         </motion.div>
 
-        <motion.div variants={staggerContainer} className="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
+        <motion.div variants={staggerContainer} className="flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-14 lg:gap-20">
           {/* Step 1 */}
           <motion.div variants={fadeInUp} className="flex flex-col items-center">
             <div className="relative">
@@ -107,7 +107,7 @@ function About() {
             <p className="mt-4 sm:mt-6 text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-gray-500 uppercase">
               STEP 01
             </p>
-            <h3 className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center">
+            <h3 className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center leading-tight">
               Data-Driven Strategy
             </h3>
           </motion.div>
@@ -126,7 +126,7 @@ function About() {
             <p className="mt-4 sm:mt-6 text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-gray-500 uppercase">
               STEP 02
             </p>
-            <h3 className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center">
+            <h3 className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center leading-tight">
               Human-Centered Branding
             </h3>
           </motion.div>
@@ -143,7 +143,7 @@ function About() {
             <p className="mt-4 sm:mt-6 text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-gray-500 uppercase">
               STEP 03
             </p>
-            <h3 className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center">
+            <h3 className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg lg:text-xl font-bold text-center leading-tight">
               Case-Study-Based Coaching
             </h3>
           </motion.div>
@@ -157,7 +157,7 @@ function About() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={staggerContainer}
-      className="relative w-full py-8 sm:py-10 md:py-12 lg:py-16"
+      className="relative w-full py-12 sm:py-14 md:py-16 lg:py-20"
     >
       <div className="mx-auto w-[90%] max-w-[1200px]">
         <motion.div
@@ -167,17 +167,17 @@ function About() {
           {/* Left Column - Content */}
           <motion.div
             variants={fadeInLeft}
-            className="w-full lg:w-1/2 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 flex flex-col justify-center"
+            className="w-full lg:w-1/2 p-8 sm:p-10 md:p-12 lg:p-14 xl:p-16 flex flex-col justify-center space-y-4 sm:space-y-6"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-3 sm:mb-4 text-gray-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-[1.2] tracking-tight text-gray-900">
               Ready to Write Your Own Success Story?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-xl mb-4 sm:mb-6">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl">
               Transform your career through expert coaching and strategic guidance. Let's work together to unlock your full potential.
             </p>
             <a
               href="mailto:contact@victornkindi.com"
-              className="inline-flex items-center gap-2 bg-teal-400 text-black text-sm sm:text-base font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:bg-teal-300 transition-colors w-fit"
+              className="inline-flex items-center gap-2 bg-teal-400 text-black text-sm sm:text-base md:text-lg font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:bg-teal-300 transition-colors w-fit"
             >
               Connect Me Now
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -189,7 +189,7 @@ function About() {
           {/* Right Column - Image */}
           <motion.div
             variants={fadeInRight}
-            className="w-full lg:w-1/2 h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden"
+            className="w-full lg:w-1/2 h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden"
           >
             <img
               src="/about2.png"

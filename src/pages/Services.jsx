@@ -34,11 +34,11 @@ function Services() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={staggerContainer}
-      className="relative w-full bg-[#E2E3F6] text-gray-900 py-10 sm:py-12 md:py-16 lg:py-20"
+      className="relative w-full bg-[#E2E3F6] text-gray-900 py-8 sm:py-10 md:py-12 lg:py-16"
     >
       <div className="mx-auto w-[90%] max-w-[1200px]">
         {/* Header Section */}
-        <motion.div variants={fadeInUp} className="text-center mb-8 sm:mb-10 md:mb-12">
+        <motion.div variants={fadeInUp} className="text-center mb-6 sm:mb-8 md:mb-10">
           <div className="flex items-center justify-center gap-4 mb-4 sm:mb-6">
             <div className="h-px w-16 sm:w-24 bg-gray-300"></div>
             <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase">
@@ -46,59 +46,59 @@ function Services() {
             </p>
             <div className="h-px w-16 sm:w-24 bg-gray-300"></div>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.2] tracking-tight text-gray-900">
             Global Dialogue &<br />Disruption
           </h1>
         </motion.div>
 
         {/* Services Cards */}
-        <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+        <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
           {/* Card 1: Speaking Engagements */}
           <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-6">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaMicrophone className="text-sky-500 text-xl sm:text-2xl" />
             </div>
-            <h3 className="text-base sm:text-lg font-bold text-gray-900">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Speaking Engagements
             </h3>
           </motion.div>
 
           {/* Card 2: Panel Discussions */}
           <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-4 sm:mb-6">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaUsers className="text-purple-500 text-xl sm:text-2xl" />
             </div>
-            <h3 className="text-base sm:text-lg font-bold text-gray-900">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Panel Discussions
             </h3>
           </motion.div>
 
           {/* Card 3: Digital Transformation */}
           <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-green-100 flex items-center justify-center mb-4 sm:mb-6">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-green-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaGlobe className="text-green-500 text-xl sm:text-2xl" />
             </div>
-            <h3 className="text-base sm:text-lg font-bold text-gray-900">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Digital Transformation
             </h3>
           </motion.div>
 
           {/* Card 4: Institutional Investment */}
           <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-orange-100 flex items-center justify-center mb-4 sm:mb-6">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-orange-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaBuilding className="text-orange-500 text-xl sm:text-2xl" />
             </div>
-            <h3 className="text-base sm:text-lg font-bold text-gray-900">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Institutional Investment
             </h3>
           </motion.div>
 
           {/* Card 5: Media Entrepreneurship */}
           <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-pink-100 flex items-center justify-center mb-4 sm:mb-6">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-pink-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaPlay className="text-pink-500 text-xl sm:text-2xl" />
             </div>
-            <h3 className="text-base sm:text-lg font-bold text-gray-900">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Media Entrepreneurship
             </h3>
           </motion.div>
@@ -112,24 +112,24 @@ function Services() {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={staggerContainer}
-      className="relative w-full bg-white text-gray-900 py-4 sm:py-6 md:py-8 lg:py-10"
+      className="relative w-full bg-white text-gray-900 py-8 sm:py-10 md:py-12 lg:py-16"
     >
       <div className="mx-auto w-[90%] max-w-[1400px]">
         {/* Header */}
-        <motion.div variants={fadeInUp} className="text-center mb-3 sm:mb-4 md:mb-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-2 sm:mb-3">
-            .
+        <motion.div variants={fadeInUp} className="text-center mb-6 sm:mb-8 md:mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-3 sm:mb-4">
+            CAREERS
           </h1>
-          <p className="text-base sm:text-lg md:text-xl font-bold mb-1">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2">
             Expertise That Creates Impact
           </p>
-          <p className="text-xs sm:text-sm md:text-base text-gray-600">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
             Driving Transformation Across Africa & Beyond
           </p>
         </motion.div>
 
         {/* Job Cards Carousel */}
-        <motion.div variants={fadeInUp} className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] flex items-center justify-center">
+        <motion.div variants={fadeInUp} className="relative h-[220px] sm:h-[280px] md:h-[340px] lg:h-[400px] flex items-center justify-center">
           {/* Left Arrow */}
           <button
             onClick={() => setActiveCard(Math.max(0, activeCard - 1))}
@@ -166,19 +166,19 @@ function Services() {
                   >
                     {isActive ? (
                       <>
-                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight mb-3">
                           {job.title}
                         </h3>
-                        <p className="text-[10px] sm:text-xs text-white/70 mb-4 line-clamp-2">
+                        <p className="text-[10px] sm:text-xs md:text-sm text-white/70 mb-4 line-clamp-2 leading-relaxed">
                           {job.description}
                         </p>
-                        <span className="text-[10px] sm:text-xs bg-white/20 text-white px-3 py-1.5 rounded-full inline-block">
+                        <span className="text-[10px] sm:text-xs md:text-sm bg-white/20 text-white px-3 py-1.5 rounded-full inline-block font-semibold">
                           {job.tag}
                         </span>
                       </>
                     ) : (
                       <>
-                        <h3 className="text-sm sm:text-base font-bold text-white mb-1 line-clamp-2">
+                        <h3 className="text-sm sm:text-base md:text-lg font-bold text-white mb-1 line-clamp-2 leading-tight">
                           {job.title}
                         </h3>
                       </>

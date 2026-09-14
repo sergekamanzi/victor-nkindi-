@@ -106,22 +106,18 @@ function Home() {
             <div className="text-center lg:text-left flex-shrink-0">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900"><Counter value={55} /></p>
               <p className="text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-widest text-gray-600 uppercase mt-0.5">Happy Clients</p>
-              <FaUsers className="text-sky-400 mt-1 mx-auto lg:mx-0 text-sm sm:text-base" />
             </div>
             <div className="text-center lg:text-left flex-shrink-0">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900"><Counter value={125} /></p>
               <p className="text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-widest text-gray-600 uppercase mt-0.5">Projects Done</p>
-              <FaBriefcase className="text-sky-400 mt-1 mx-auto lg:mx-0 text-sm sm:text-base" />
             </div>
             <div className="text-center lg:text-left flex-shrink-0">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900"><Counter value={12} /></p>
               <p className="text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-widest text-gray-600 uppercase mt-0.5">Awards Winning</p>
-              <FaTrophy className="text-sky-400 mt-1 mx-auto lg:mx-0 text-sm sm:text-base" />
             </div>
             <div className="text-center lg:text-left flex-shrink-0">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900"><Counter value={20} /></p>
               <p className="text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-widest text-gray-600 uppercase mt-0.5">Years Experience</p>
-              <FaClock className="text-sky-400 mt-1 mx-auto lg:mx-0 text-sm sm:text-base" />
             </div>
           </motion.div>
         </motion.div>
@@ -268,29 +264,29 @@ function Home() {
             </a>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="bg-gray-100 rounded-xl p-6 sm:p-8 flex flex-col min-h-48 sm:min-h-55">
-            <p className="text-[10px] sm:text-xs font-bold tracking-widest text-sky-400">
+          <motion.div variants={fadeInUp} className="bg-gray-100 rounded-xl p-6 sm:p-8 md:p-10 flex flex-col min-h-48 sm:min-h-55">
+            <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase">
               AWARDS
             </p>
-            <h3 className="mt-2 text-xl sm:text-2xl md:text-3xl font-extrabold">
+            <h3 className="mt-2 text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight">
               ITU Recognition
             </h3>
             <div className="flex-1" />
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg">
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
               Awarded for significant contributions to telecommunications and
               digital infrastructure development.
             </p>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="bg-[#050A1A] text-white rounded-xl p-6 sm:p-8 flex flex-col min-h-48 sm:min-h-55">
-            <p className="text-[10px] sm:text-xs font-bold tracking-widest text-teal-400">
+          <motion.div variants={fadeInUp} className="bg-[#050A1A] text-white rounded-xl p-6 sm:p-8 md:p-10 flex flex-col min-h-48 sm:min-h-55">
+            <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-teal-400 uppercase">
               METRICS
             </p>
-            <h3 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-extrabold">
+            <h3 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
               15+
             </h3>
             <div className="flex-1" />
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg">
+            <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
               Years of executive leadership in media and institutional
               advisory roles.
             </p>
