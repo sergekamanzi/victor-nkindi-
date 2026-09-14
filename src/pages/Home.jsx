@@ -1,6 +1,5 @@
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { FaUsers, FaBriefcase, FaTrophy, FaClock } from 'react-icons/fa'
 
 const expertise = [
   'Digital Marketing',
@@ -91,7 +90,7 @@ function Home() {
               href="#strategy"
               className="bg-teal-400 text-black text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded flex items-center gap-2 hover:bg-teal-300 transition-colors"
             >
-              EXPLORE STRATEGY <span aria-hidden="true">→</span>
+              EXPLORE SERVICES <span aria-hidden="true">→</span>
             </a>
             <a
               href="#bio"

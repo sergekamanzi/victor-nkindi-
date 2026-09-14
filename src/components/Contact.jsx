@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const exploreLinks = [
   { name: 'About Me', to: '/about' },
@@ -56,14 +57,22 @@ function Contact() {
                 +250 788 275 646
               </a>
             </li>
-            <li>
+            <li className="flex items-center gap-4">
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-white transition-colors"
               >
-                LinkedIn
+                <FaLinkedin className="text-xl" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <FaTwitter className="text-xl" />
               </a>
             </li>
           </ul>

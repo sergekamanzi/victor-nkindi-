@@ -40,11 +40,6 @@ function Services() {
         {/* Header Section */}
         <motion.div variants={fadeInUp} className="text-center mb-6 sm:mb-8 md:mb-10">
           <div className="flex items-center justify-center gap-4 mb-4 sm:mb-6">
-            <div className="h-px w-16 sm:w-24 bg-gray-300"></div>
-            <p className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-sky-400 uppercase">
-              OUR SERVICES
-            </p>
-            <div className="h-px w-16 sm:w-24 bg-gray-300"></div>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.2] tracking-tight text-gray-900">
             Global Dialogue &<br />Disruption
@@ -54,7 +49,7 @@ function Services() {
         {/* Services Cards */}
         <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
           {/* Card 1: Speaking Engagements */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaMicrophone className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -64,9 +59,9 @@ function Services() {
           </motion.div>
 
           {/* Card 2: Panel Discussions */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-4 sm:mb-5">
-              <FaUsers className="text-purple-500 text-xl sm:text-2xl" />
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
+              <FaUsers className="text-sky-500 text-xl sm:text-2xl" />
             </div>
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Panel Discussions
@@ -74,9 +69,9 @@ function Services() {
           </motion.div>
 
           {/* Card 3: Digital Transformation */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-green-100 flex items-center justify-center mb-4 sm:mb-5">
-              <FaGlobe className="text-green-500 text-xl sm:text-2xl" />
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
+              <FaGlobe className="text-sky-500 text-xl sm:text-2xl" />
             </div>
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Digital Transformation
@@ -84,9 +79,9 @@ function Services() {
           </motion.div>
 
           {/* Card 4: Institutional Investment */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-orange-100 flex items-center justify-center mb-4 sm:mb-5">
-              <FaBuilding className="text-orange-500 text-xl sm:text-2xl" />
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
+              <FaBuilding className="text-sky-500 text-xl sm:text-2xl" />
             </div>
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Institutional Investment
@@ -94,9 +89,9 @@ function Services() {
           </motion.div>
 
           {/* Card 5: Media Entrepreneurship */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-sky-300 transition-colors">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-pink-100 flex items-center justify-center mb-4 sm:mb-5">
-              <FaPlay className="text-pink-500 text-xl sm:text-2xl" />
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
+              <FaPlay className="text-sky-500 text-xl sm:text-2xl" />
             </div>
             <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight">
               Media Entrepreneurship
@@ -118,7 +113,7 @@ function Services() {
         {/* Header */}
         <motion.div variants={fadeInUp} className="text-center mb-6 sm:mb-8 md:mb-10">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-3 sm:mb-4">
-            CAREERS
+            Services
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2">
             Expertise That Creates Impact
