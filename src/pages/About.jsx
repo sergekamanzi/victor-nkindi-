@@ -177,7 +177,7 @@ function About() {
             </p>
             <a
               href="mailto:contact@victornkindi.com"
-              className="inline-flex items-center gap-2 bg-teal-400 text-black text-sm sm:text-base md:text-lg font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:bg-teal-300 transition-colors w-fit"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-600 text-white text-sm sm:text-base md:text-lg font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:from-sky-600 hover:to-cyan-700 transition-all duration-300 w-fit"
             >
               Connect Me Now
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

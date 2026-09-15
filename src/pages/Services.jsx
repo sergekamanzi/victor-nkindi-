@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaMicrophone, FaUsers, FaGlobe, FaBuilding, FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaMicrophone, FaUsers, FaGlobe, FaBuilding, FaPlay, FaChevronLeft, FaChevronRight, FaEnvelope, FaPhone, FaArrowRight } from 'react-icons/fa'
 import { useState } from 'react'
 
 const fadeInUp = {
@@ -128,7 +128,7 @@ function Services() {
           {/* Left Arrow */}
           <button
             onClick={() => setActiveCard(Math.max(0, activeCard - 1))}
-            className="absolute left-0 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-cyan-500 text-white flex items-center justify-center hover:bg-cyan-600 transition-colors shadow-lg"
+            className="absolute left-0 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-sky-500 to-cyan-600 text-white flex items-center justify-center hover:from-sky-600 hover:to-cyan-700 transition-all duration-300 shadow-lg"
           >
             <FaChevronLeft className="text-sm sm:text-base" />
           </button>
@@ -155,8 +155,8 @@ function Services() {
                   <div
                     className={`rounded-xl p-4 sm:p-6 transition-all duration-300 ${
                       isActive
-                        ? 'w-[280px] sm:w-[350px] md:w-[450px] lg:w-[520px] h-[220px] sm:h-[260px] md:h-[300px] bg-gradient-to-br from-cyan-500 to-teal-700 shadow-2xl'
-                        : 'w-[240px] sm:w-[280px] md:w-[320px] h-[180px] sm:h-[220px] md:h-[260px] bg-gradient-to-br from-cyan-400 to-teal-600 shadow-lg'
+                        ? 'w-[280px] sm:w-[350px] md:w-[450px] lg:w-[520px] h-[220px] sm:h-[260px] md:h-[300px] bg-gradient-to-r from-sky-500 to-cyan-600 shadow-2xl'
+                        : 'w-[240px] sm:w-[280px] md:w-[320px] h-[180px] sm:h-[220px] md:h-[260px] bg-gradient-to-r from-sky-400 to-cyan-500 shadow-lg'
                     }`}
                   >
                     {isActive ? (
@@ -187,10 +187,109 @@ function Services() {
           {/* Right Arrow */}
           <button
             onClick={() => setActiveCard(Math.min(jobs.length - 1, activeCard + 1))}
-            className="absolute right-0 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-cyan-500 text-white flex items-center justify-center hover:bg-cyan-600 transition-colors shadow-lg"
+            className="absolute right-0 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-sky-500 to-cyan-600 text-white flex items-center justify-center hover:from-sky-600 hover:to-cyan-700 transition-all duration-300 shadow-lg"
           >
             <FaChevronRight className="text-sm sm:text-base" />
           </button>
+        </motion.div>
+      </div>
+    </motion.section>
+
+    {/* Let's Talk Contact Section */}
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={staggerContainer}
+      className="relative w-full bg-white text-gray-900 py-8 sm:py-10 md:py-12"
+    >
+      <div className="mx-auto w-[90%] max-w-[1000px]">
+        <motion.div variants={fadeInUp} className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* Left Column - Contact Info */}
+            <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-sky-50 to-cyan-50">
+              <div className="mb-6 sm:mb-8">
+                <div className="w-12 h-1 bg-sky-500 mb-4 sm:mb-6"></div>
+                <h2 className="text-sm sm:text-base font-bold tracking-widest text-sky-600 mb-4 sm:mb-6">
+                  LET'S TALK
+                </h2>
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900">
+                  Let's build something <span className="text-sky-600">worth remembering.</span>
+                </h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
+                  Ready to make things happen? Tell me about your brand, your goals and where you'd like to be, and let's design the path there together.
+                </p>
+              </div>
+
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-sky-500 flex items-center justify-center">
+                    <FaEnvelope className="text-white text-sm sm:text-base" />
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm text-gray-500 mb-1">Email</p>
+                    <a href="mailto:contact@victornkindi.com" className="text-sm sm:text-base md:text-lg text-gray-900 hover:text-sky-600 transition-colors font-medium">
+                      contact@victornkindi.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-sky-500 flex items-center justify-center">
+                    <FaPhone className="text-white text-sm sm:text-base" />
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm text-gray-500 mb-1">Phone</p>
+                    <a href="tel:+250788275646" className="text-sm sm:text-base md:text-lg text-gray-900 hover:text-sky-600 transition-colors font-medium">
+                      +250 788 275 646
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Contact Form */}
+            <div className="p-6 sm:p-8 md:p-10">
+              <form className="space-y-4 sm:space-y-5">
+                <div>
+                  <label className="block text-xs sm:text-sm font-bold tracking-widest text-gray-900 mb-2 sm:mb-3">
+                    FULL NAME
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs sm:text-sm font-bold tracking-widest text-gray-900 mb-2 sm:mb-3">
+                    EMAIL ADDRESS
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="you@company.com"
+                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs sm:text-sm font-bold tracking-widest text-gray-900 mb-2 sm:mb-3">
+                    PROJECT / MESSAGE
+                  </label>
+                  <textarea
+                    placeholder="Tell me about your brand and goals..."
+                    rows="4"
+                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-sky-500 to-cyan-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg hover:from-sky-600 hover:to-cyan-700 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl"
+                >
+                  SEND MESSAGE
+                  <FaArrowRight className="text-sm sm:text-base" />
+                </button>
+              </form>
+            </div>
+          </div>
         </motion.div>
       </div>
     </motion.section>

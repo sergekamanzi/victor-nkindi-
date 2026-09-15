@@ -49,7 +49,7 @@ function Navbar() {
           
           <a
             href="#invest"
-            className="bg-teal-400 text-black text-sm font-semibold px-5 py-2 rounded hover:bg-teal-300 transition-colors"
+            className="bg-gradient-to-r from-sky-500 to-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded hover:from-sky-600 hover:to-cyan-700 transition-all duration-300"
           >
             Let's Connect <span aria-hidden="true">→</span>
           </a>
@@ -109,7 +109,7 @@ function Navbar() {
           <a
             href="#invest"
             onClick={closeMenu}
-            className="bg-teal-400 text-black text-sm font-semibold px-5 py-2 rounded text-center hover:bg-teal-300 transition-colors"
+            className="bg-gradient-to-r from-sky-500 to-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded text-center hover:from-sky-600 hover:to-cyan-700 transition-all duration-300"
           >
             Invest
           </a>

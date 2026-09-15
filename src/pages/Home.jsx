@@ -88,7 +88,7 @@ function Home() {
           <div className="mt-6 sm:mt-8 flex flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
             <a
               href="#strategy"
-              className="bg-teal-400 text-black text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded flex items-center gap-2 hover:bg-teal-300 transition-colors"
+              className="bg-gradient-to-r from-sky-500 to-cyan-600 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded flex items-center gap-2 hover:from-sky-600 hover:to-cyan-700 transition-all duration-300"
             >
               EXPLORE SERVICES <span aria-hidden="true">→</span>
             </a>
