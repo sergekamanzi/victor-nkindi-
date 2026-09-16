@@ -18,13 +18,14 @@ const staggerContainer = {
 }
 
 function Services() {
-  const [activeCard, setActiveCard] = useState(0)
+  const [activeCard, setActiveCard] = useState(2)
 
   const jobs = [
-    { title: "Media and Business Development", type: "Full Time", date: "14 Nov 2025", description: "Job Description Grow Rwanda is a Kigali-based professional services firm delivering world-class digital products, engineering, design, marketing, acco...", tag: "See More" },
-    { title: "Corporate and Institutional Communication", type: "Full Time", date: "14 Nov 2025", description: "Job Description Grow Rwanda is a Kigali-based professional services firm delivering world-class digital products, engineering, design, marketing, acco...", tag: "See More" },
-    { title: "Entrepreneurship Training - Mentoring and Coaching", type: "Full Time", date: "14 Nov 2025", description: "Job Description Grow Rwanda is a Kigali-based professional services firm delivering world-class digital products, engineering, design, marketing, acco...", tag: "See More" },
-    { title: "Investment & Corporate Services", type: "Full Time", date: "14 Nov 2025", description: "Job Description Grow Rwanda is a Kigali-based professional services firm delivering world-class digital products, engineering, design, marketing, acco...", tag: "See More" },
+    { title: "Healthcare Interp", type: "Part Time", date: "10 Nov 2025", description: "General Assessment - English proficiency and medical terminology required for interpretation services...", tag: "See More" },
+    { title: "Testing", type: "Full Time", date: "12 Nov 2025", description: "English Assessment - Quality assurance and testing protocols for digital products...", tag: "See More" },
+    { title: "General Talent", type: "Full Time", date: "14 Nov 2025", description: "General Assessment - Multi-disciplinary talent acquisition and development programs...", tag: "See More" },
+    { title: "Engineer", type: "Full Time", date: "15 Jan 2026", description: "Technical Assessment - Software engineering and infrastructure development roles...", tag: "See More" },
+    { title: "The CEO", type: "Full Time", date: "20 Jan 2026", description: "Executive Assessment - Leadership and strategic management positions...", tag: "See More" },
   ]
 
   return (
@@ -124,7 +125,7 @@ function Services() {
         </motion.div>
 
         {/* Job Cards Carousel */}
-        <motion.div variants={fadeInUp} className="relative h-[220px] sm:h-[280px] md:h-[340px] lg:h-[400px] flex items-center justify-center">
+        <motion.div variants={fadeInUp} className="relative h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] flex items-center justify-center overflow-hidden">
           {/* Left Arrow */}
           <button
             onClick={() => setActiveCard(Math.max(0, activeCard - 1))}
@@ -133,21 +134,21 @@ function Services() {
             <FaChevronLeft className="text-sm sm:text-base" />
           </button>
 
-          <div className="relative w-full max-w-5xl mx-auto px-12 sm:px-16">
+          <div className="relative w-full max-w-6xl mx-auto px-8 sm:px-12">
             {jobs.map((job, index) => {
               const isActive = index === activeCard
               const offset = index - activeCard
-              const scale = isActive ? 1 : 0.85
-              const opacity = isActive ? 1 : 0.6
+              const scale = isActive ? 1 : 0.75
+              const opacity = isActive ? 1 : 0.4
               const zIndex = isActive ? 10 : 5 - Math.abs(offset)
-              const translateX = offset * 80
+              const translateX = offset * 120
 
               return (
                 <motion.div
                   key={index}
                   initial={{ scale, opacity, x: translateX }}
                   animate={{ scale, opacity, x: translateX }}
-                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
                   onClick={() => setActiveCard(index)}
                   className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer`}
                   style={{ zIndex }}
@@ -155,27 +156,40 @@ function Services() {
                   <div
                     className={`rounded-xl p-4 sm:p-6 transition-all duration-300 ${
                       isActive
-                        ? 'w-[280px] sm:w-[350px] md:w-[450px] lg:w-[520px] h-[220px] sm:h-[260px] md:h-[300px] bg-gradient-to-r from-sky-500 to-cyan-600 shadow-2xl'
-                        : 'w-[240px] sm:w-[280px] md:w-[320px] h-[180px] sm:h-[220px] md:h-[260px] bg-gradient-to-r from-sky-400 to-cyan-500 shadow-lg'
+                        ? 'w-[320px] sm:w-[400px] md:w-[480px] lg:w-[560px] h-[240px] sm:h-[280px] md:h-[320px] bg-gradient-to-r from-sky-500 to-cyan-600 shadow-2xl'
+                        : 'w-[200px] sm:w-[240px] md:w-[280px] h-[160px] sm:h-[180px] md:h-[200px] bg-gradient-to-r from-sky-400 to-cyan-500 shadow-lg'
                     }`}
                   >
                     {isActive ? (
                       <>
-                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight mb-3">
-                          {job.title}
-                        </h3>
+                        <div className="flex items-start justify-between mb-3">
+                          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight">
+                            {job.title}
+                          </h3>
+                          <span className="text-[10px] sm:text-xs text-white/80 font-semibold">
+                            {job.date}
+                          </span>
+                        </div>
                         <p className="text-[10px] sm:text-xs md:text-sm text-white/70 mb-4 line-clamp-2 leading-relaxed">
                           {job.description}
                         </p>
-                        <span className="text-[10px] sm:text-xs md:text-sm bg-white/20 text-white px-3 py-1.5 rounded-full inline-block font-semibold">
-                          {job.tag}
-                        </span>
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] sm:text-xs md:text-sm text-white/60">
+                            {job.type}
+                          </span>
+                          <button className="text-[10px] sm:text-xs md:text-sm bg-white/20 text-white px-3 py-1.5 rounded-full font-semibold hover:bg-white/30 transition-colors">
+                            View details & apply
+                          </button>
+                        </div>
                       </>
                     ) : (
                       <>
                         <h3 className="text-sm sm:text-base md:text-lg font-bold text-white mb-1 line-clamp-2 leading-tight">
                           {job.title}
                         </h3>
+                        <p className="text-[10px] sm:text-xs text-white/60">
+                          {job.type}
+                        </p>
                       </>
                     )}
                   </div>
@@ -210,8 +224,15 @@ function Services() {
             <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-sky-50 to-cyan-50">
               <div className="mb-6 sm:mb-8">
                 <div className="w-12 h-1 bg-sky-500 mb-4 sm:mb-6"></div>
-                <h2 className="text-sm sm:text-base font-bold tracking-widest text-sky-600 mb-4 sm:mb-6">
+                <h2 className="text-sm sm:text-base font-bold tracking-widest text-sky-600 mb-4 sm:mb-6 flex items-center gap-2">
                   LET'S TALK
+                  <motion.span
+                    animate={{ rotate: [0, 20, -20, 20, -20, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
+                    className="text-lg sm:text-xl inline-block"
+                  >
+                    👋
+                  </motion.span>
                 </h2>
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900">
                   Let's build something <span className="text-sky-600">worth remembering.</span>
