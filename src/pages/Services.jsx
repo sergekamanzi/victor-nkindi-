@@ -50,7 +50,7 @@ function Services() {
         {/* Services Cards */}
         <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
           {/* Card 1: Speaking Engagements */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200/40">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaMicrophone className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -60,7 +60,7 @@ function Services() {
           </motion.div>
 
           {/* Card 2: Panel Discussions */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200/40">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaUsers className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -70,7 +70,7 @@ function Services() {
           </motion.div>
 
           {/* Card 3: Digital Transformation */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200/40">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaGlobe className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -80,7 +80,7 @@ function Services() {
           </motion.div>
 
           {/* Card 4: Institutional Investment */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200/40">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaBuilding className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -90,7 +90,7 @@ function Services() {
           </motion.div>
 
           {/* Card 5: Media Entrepreneurship */}
-          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200">
+          <motion.div variants={fadeInUp} className="bg-transparent rounded-xl p-6 sm:p-8 border border-gray-200/40">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-sky-100 flex items-center justify-center mb-4 sm:mb-5">
               <FaPlay className="text-sky-500 text-xl sm:text-2xl" />
             </div>
@@ -218,7 +218,7 @@ function Services() {
       className="relative w-full bg-white text-gray-900 py-8 sm:py-10 md:py-12"
     >
       <div className="mx-auto w-[90%] max-w-[1000px]">
-        <motion.div variants={fadeInUp} className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+        <motion.div variants={fadeInUp} className="bg-white rounded-2xl shadow-xl border border-gray-200/40 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Left Column - Contact Info */}
             <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-sky-50 to-cyan-50">
@@ -278,7 +278,7 @@ function Services() {
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
+                    className="w-full bg-gray-50 border border-gray-300/50 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
                   />
                 </div>
                 <div>
@@ -288,7 +288,7 @@ function Services() {
                   <input
                     type="email"
                     placeholder="you@company.com"
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
+                    className="w-full bg-gray-50 border border-gray-300/50 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base"
                   />
                 </div>
                 <div>
@@ -298,7 +298,7 @@ function Services() {
                   <textarea
                     placeholder="Tell me about your brand and goals..."
                     rows="4"
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base resize-none"
+                    className="w-full bg-gray-50 border border-gray-300/50 rounded-lg px-4 py-3 sm:px-5 sm:py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all text-sm sm:text-base resize-none"
                   ></textarea>
                 </div>
                 <button

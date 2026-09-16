@@ -123,7 +123,7 @@ function Home() {
 
         <motion.div variants={fadeInRight} className="relative flex-1 flex justify-center py-4 sm:py-6">
           {/* outline offset behind the blob for depth */}
-          <div className="absolute w-48 h-56 xs:w-56 xs:h-64 sm:w-64 sm:h-72 md:w-80 md:h-96 lg:w-96 lg:h-[26rem] translate-x-2 sm:translate-x-3 translate-y-2 sm:translate-y-3 md:translate-x-4 md:translate-y-4 rounded-tl-2xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-2xl border-2 border-sky-400/70" />
+          <div className="absolute w-48 h-56 xs:w-56 xs:h-64 sm:w-64 sm:h-72 md:w-80 md:h-96 lg:w-96 lg:h-[26rem] translate-x-2 sm:translate-x-3 translate-y-2 sm:translate-y-3 md:translate-x-4 md:translate-y-4 rounded-tl-2xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-2xl border-2 border-sky-400/30" />
           <div className="relative w-48 h-56 xs:w-56 xs:h-64 sm:w-64 sm:h-72 md:w-80 md:h-96 lg:w-96 lg:h-[26rem] bg-[#2E9BCA] rounded-tl-2xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-2xl overflow-hidden flex items-end justify-center">
             <img
               src="/hero.png"
@@ -173,7 +173,7 @@ function Home() {
           </a>
         </motion.div>
 
-        <motion.div variants={fadeInUp} className="lg:border-l lg:border-gray-700 lg:pl-8 sm:lg:pl-12 flex flex-col gap-6 sm:gap-8 md:gap-10">
+        <motion.div variants={fadeInUp} className="lg:border-l lg:border-gray-700/30 lg:pl-8 sm:lg:pl-12 flex flex-col gap-6 sm:gap-8 md:gap-10">
           <div>
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Structural Integrity</h3>
             <p className="mt-2 sm:mt-3 text-gray-400 text-sm sm:text-base md:text-lg">

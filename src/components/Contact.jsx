@@ -11,7 +11,7 @@ const exploreLinks = [
 function Contact() {
   return (
     <footer className="relative bg-[#0b0d12] text-white px-6 md:px-10 py-24 md:py-32 overflow-hidden">
-      <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-sky-400/60 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <div>
@@ -79,7 +79,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs md:text-sm text-gray-500">
+      <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-gray-800/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs md:text-sm text-gray-500">
         <p>© {new Date().getFullYear()} Victor Nkindi · All rights reserved.</p>
         <p>Media Strategy · Policy Advisory · Institutional Leadership</p>
       </div>
